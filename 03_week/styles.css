@@ -1,0 +1,140 @@
+
+
+*{ 
+   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+header{ 
+ background-color: #69013b;
+  background-size: cover;
+  background-position: center;
+  width: auto;
+  height: 100px;
+  margin: 0px;
+  padding: 0px 15px;
+}
+
+
+.logo{
+  width: 390.34px;
+  height: 100px;;
+  align-self: left;
+}
+
+
+.hero{
+  background-image: url('https://www.bc.fi/wp-content/uploads/2024/05/eminna-etusivu-1.jpg'); 
+  max-width: 100%;
+  height: 300px;
+  object-fit: ;
+  
+  font-family: "marion";
+  align-items: center;
+    text-align: right;
+    font-weight: 500;
+    line-height: 1.2;
+  
+}
+
+.hero h1 {font-size: 3.2rem;
+    line-height: 62px;
+    margin: 0px 0px 8px;
+    padding: 10px 0px 15px;
+      color: #fce0d1;
+      text-align: right;
+      font-family: "marion";
+      font-size: 51.2px;
+      font-weight: 500;
+      
+
+    }
+
+.hero h4 {
+  font-size: 25px;
+  font-family: "marion";
+  color:#fce0d1;
+  padding-right: 10px;
+
+}
+.flex-container{
+  display:table-row
+}
+
+  .courseInfo {
+  background-color: #ffffff; /*need to match brandig*/
+  padding: 0px;
+  margin: 0px 0px 15px;
+  width: 100%;
+  height: 300px;
+  border: none;
+  color:#66003b;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+  .courseInfo h2{
+
+  font-size: 2rem; /**/
+  font-family: "poppins";
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+ 
+  }
+  .courseInfo p{
+  font-size: 15px; 
+  font-family: "poppins";
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+
+  }
+
+.list{
+  background-color: #fce0d1;
+  ::before {
+    content: "🔥 ";
+  }
+  
+  ::after {
+    content: " 🎉";
+  }
+margin-top: 10px;
+padding-left: 10px;
+text-align: left
+}
+
+.button1{
+  margin: 10px;
+  background-color: rgb(255, 255, 255);
+  padding: 2px 15px 2px;
+}
+
+
+  .button1:hover {
+    background-color: #66003b;
+    font-size: 1rem;
+    font-style: #212529;
+    border: none;
+  }
+
+img{
+  width: 100px;
+}
+
+footer{
+  background-color: #ffffff;
+}

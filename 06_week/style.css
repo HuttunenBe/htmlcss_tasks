@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  
+  }
+
+  body{
+    background-color: rgb(228, 129, 203);
+    font-family: monospace;
+  }
+
+  container{
+    max-width: 1200px;
+  }
+
+  header{
+    display: flex;
+    background-color: rgb(219, 206, 224);
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px;
+    height: 150px;
+  
+    
+  }
+
+
+#about{
+  background-color: rgb(171, 156, 181);
+  padding: 70px;
+  line-height: 1.2;
+
+  height: 45vh;
+
+}
+
+h2{
+  padding-bottom: 10px;
+}
+
+#projects{
+
+  background-color: rgb(167, 92, 224);
+  height: 45vh;
+  padding: 70px;
+  line-height: 1.2;
+
+}
+
+#skills{
+  background-color: rgb(53, 17, 63);
+  height: 45vh;
+  padding: 70px;
+  color:antiquewhite;
+  line-height: 1.2;
+}
+  
+
+  footer{
+    display: flex;
+    background-color: rgb(224, 228, 227);
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    padding: 70px;}
+
+
+    nav.sub_nav ul li{
+      display: block; 
+    }
+
+    @media (max-width:1200px){
+      body{
+        background-color: rgb(123, 115, 105);
+      }
+    }
+
+    @media (max-width:768px){
+      body{
+        background-color: rgb(108, 91, 69);
+      }
+    }
+
+    @media (max-width:375px){
+      body{
+        background-color: rgb(41, 27, 7);
+      }
+    }
+
+    
