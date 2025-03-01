@@ -10,84 +10,73 @@
     font-family: monospace;
   }
 
-  h2 {
-        margin: 0 0 20px 0; 
+  h2{
+      margin: 0 0 20px 0; 
   }
-
-  container{
-    max-width: 1200px;
-    padding: 20px;
-  }
+ 
 
   header {
     display: flex;
     background-color: rgb(219, 206, 224);
     justify-content: space-between;
     align-items: center;
-    padding: 70px;
+    padding: 5rem;
     height: 150px;
+    flex-direction: row; 
+  }
+  
+  nav ul {
     display: flex;
     flex-direction: row;
-   
-    
+    list-style: none;
+    color: blueviolet;
+    font-size: 1rem;
   }
-
-  nav  ul{
-   display: flex;
-   flex-direction: row;
-   list-style: none;
-   color:blueviolet;
-   font-size: 15px;
-  }
-
-  nav ul li{
+  
+  nav ul li {
     margin: 10px;
-   }
-
-
+  }
+  
   #about {
     background-color: rgb(196, 161, 219);
-    padding: 70px;
+    padding: 5rem 10rem 5rem 10rem;
     line-height: 1.2;
     display: flex;
-    flex-direction: row; 
-    justify-content: flex-start;
-    align-items: flex-start; 
-    flex-wrap: wrap; 
-
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
   }
-
-#about h2 {
-    text-align: left; 
-}
-
-#about div {
+  
+  #about h2 {
+    text-align: left;
+  }
+  
+  #about div {
     display: flex;
-    flex-direction: row; 
-    align-items: flex-start; 
+    flex-direction: row;
+    align-items: flex-start;
     width: 100%;
     gap: 20px;
- }
-
-#paragraph{
-    flex: 1; 
-    text-align: left; 
-
-}
-
-#pigeon {
+  }
+  
+  #paragraph {
+    flex: 1;
+    text-align: left;
+  }
+  
+  #pigeon {
     width: 200px;
     height: auto;
-    object-fit: cover; 
-    flex-shrink: 0; 
-}
+    object-fit: cover;
+    flex-shrink: 0;
+  }
 
 
 #projects{
-
   background-color: rgb(167, 92, 224);
   height: 45vh;
-  padding: 70px;
+  padding: 5rem 10rem 20rem 10rem;
   line-height: 1.2;
   flex-direction: column;
   justify-content: center;
@@ -100,38 +89,37 @@
   justify-content: space-around; 
   gap: 30px;
   flex-wrap: wrap;
-
-} 
+}
 
 #project {
   background-color: rgb(218, 212, 227);
-  padding: 20px;
+  padding: 4rem;
   width: 150px; 
   height: 170px;
   border-radius: 5px 20px 0px; 
+  
 ;
-}
 
+}
 
 
 #skills{
-  background-color: rgb(53, 17, 63);
+  background-color: rgb(73, 23, 87);
   height: 45vh;
-  padding: 70px;
+  padding: 5rem 10rem 5rem 10rem;
   color:antiquewhite;
   line-height: 1.2;
+  
 }
   
 
-
-
-  footer  {
+  footer{
     display: flex;
     background-color: rgb(219, 206, 224);
     justify-content: space-between;
     align-items: center;
     height: 150px;
-    padding: 70px;
+    padding: 4rem;
   }
 
 
@@ -141,14 +129,20 @@
 
     @media (max-width:1200px){
       body{
-        background-color: rgb(123, 115, 105);
+        background-color: rgb(22, 35, 20);
       }
     }
 
+    @media (max-width:768px) {
+      body {
+          background-color: rgb(61, 111, 63);
+      }
+  }
 
-    @media (max-width:375px) {
+
+    @media (max-width:375px){
       body{
-        background-color: rgb(41, 27, 7);
+        background-color: rgb(41, 149, 52);
       }
     }
 
