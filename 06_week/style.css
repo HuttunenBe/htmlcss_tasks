@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
   
-  
   }
 
   body{
@@ -11,34 +10,78 @@
     font-family: monospace;
   }
 
-  container{
-    max-width: 1200px;
+  h2 {
+        margin: 0 0 20px 0; 
   }
 
-  header{
+  container{
+    max-width: 1200px;
+    padding: 20px;
+  }
+
+  header {
     display: flex;
     background-color: rgb(219, 206, 224);
     justify-content: space-between;
     align-items: center;
     padding: 70px;
     height: 150px;
-  
+    display: flex;
+    flex-direction: row;
+   
     
   }
 
+  nav  ul{
+   display: flex;
+   flex-direction: row;
+   list-style: none;
+   color:blueviolet;
+   font-size: 15px;
+  }
 
-#about{
-  background-color: rgb(171, 156, 181);
-  padding: 70px;
-  line-height: 1.2;
+  nav ul li{
+    margin: 10px;
+   }
 
-  height: 45vh;
+
+  #about {
+    background-color: rgb(196, 161, 219);
+    padding: 70px;
+    line-height: 1.2;
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-start;
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+
+  }
+
+#about h2 {
+    text-align: left; 
+}
+
+#about div {
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-start; 
+    width: 100%;
+    gap: 20px;
+ }
+
+#paragraph{
+    flex: 1; 
+    text-align: left; 
 
 }
 
-h2{
-  padding-bottom: 10px;
+#pigeon {
+    width: 200px;
+    height: auto;
+    object-fit: cover; 
+    flex-shrink: 0; 
 }
+
 
 #projects{
 
@@ -46,8 +89,30 @@ h2{
   height: 45vh;
   padding: 70px;
   line-height: 1.2;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
 }
+
+#projectcontainer {
+  display: flex;
+  justify-content: space-around; 
+  gap: 30px;
+  flex-wrap: wrap;
+
+} 
+
+#project {
+  background-color: rgb(218, 212, 227);
+  padding: 20px;
+  width: 150px; 
+  height: 170px;
+  border-radius: 5px 20px 0px; 
+;
+}
+
+
 
 #skills{
   background-color: rgb(53, 17, 63);
@@ -58,13 +123,16 @@ h2{
 }
   
 
-  footer{
+
+
+  footer  {
     display: flex;
-    background-color: rgb(224, 228, 227);
+    background-color: rgb(219, 206, 224);
     justify-content: space-between;
     align-items: center;
     height: 150px;
-    padding: 70px;}
+    padding: 70px;
+  }
 
 
     nav.sub_nav ul li{
@@ -77,13 +145,8 @@ h2{
       }
     }
 
-    @media (max-width:768px){
-      body{
-        background-color: rgb(108, 91, 69);
-      }
-    }
 
-    @media (max-width:375px){
+    @media (max-width:375px) {
       body{
         background-color: rgb(41, 27, 7);
       }
