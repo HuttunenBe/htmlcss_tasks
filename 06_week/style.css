@@ -1,149 +1,318 @@
+
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   
-  }
-
-  body{
-    background-color: rgb(228, 129, 203);
-    font-family: monospace;
-  }
-
-  h2{
-      margin: 0 0 20px 0; 
-  }
- 
-
-  header {
-    display: flex;
-    background-color: rgb(219, 206, 224);
-    justify-content: space-between;
-    align-items: center;
-    padding: 5rem;
-    height: 150px;
-    flex-direction: row; 
-  }
-  
-  nav ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    color: blueviolet;
-    font-size: 1rem;
-  }
-  
-  nav ul li {
-    margin: 10px;
-  }
-  
-  #about {
-    background-color: rgb(196, 161, 219);
-    padding: 5rem 10rem 5rem 10rem;
-    line-height: 1.2;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
-  
-  #about h2 {
-    text-align: left;
-  }
-  
-  #about div {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    width: 100%;
-    gap: 20px;
-  }
-  
-  #paragraph {
-    flex: 1;
-    text-align: left;
-  }
-  
-  #pigeon {
-    width: 200px;
-    height: auto;
-    object-fit: cover;
-    flex-shrink: 0;
-  }
+}
+html{
+scroll-behavior: smooth;
+}
 
 
-#projects{
-  background-color: rgb(167, 92, 224);
-  height: 45vh;
-  padding: 5rem 10rem 20rem 10rem;
-  line-height: 1.2;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+body{
+  background-color: rgb(228, 129, 203);
+  font-family: monospace;
+  
+}
+
+.darkMode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+
+
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+  width: auto;
+  padding: 5px;
+}
+
+
+.hidden {
+  display: none;
+}
+
+h1{
+text-transform: uppercase;
+}
+
+h2{
+    margin: 0 0 20px 0; 
+    text-transform: uppercase;
+    
+}
+
+
+header {
+  background-color: rgb(219, 206, 224);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; 
+  min-height: 20vh;
+  
 
 }
 
-#projectcontainer {
+body.darkMode header {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+nav ul {
   display: flex;
-  justify-content: space-around; 
-  gap: 30px;
+  flex-direction: row;
+  list-style: none;
+  color: blueviolet;
+  font-size: 1rem;
+
+
+}
+
+body.darkMode nav ul {
+  color: #ffffff;  
+}
+
+body.darkMode button {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+a:link {
+  color: rgb(10, 6, 19);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+
+nav ul li {
+  margin: 10px;
+}
+
+#about {
+  background-color: #c4a1db;
+  padding: 5% 20% 5% 20%;
+  line-height: 1.8;
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start ;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 
-#project {
-  background-color: rgb(218, 212, 227);
-  padding: 4rem;
-  width: 150px; 
-  height: 170px;
-  border-radius: 5px 20px 0px; 
+#about h2 {
+  text-align: left;
+}
+
+#about div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  gap: 20px;
+}
+
+#paragraph {
+  flex: 1;
+  text-align: left;
+}
+
+#pigeon {
+  width: 35%;
+  height: auto;
+  object-fit: cover;
+  flex-shrink: 0;
   
-;
+}
+
+body.darkMode #about{
+  background-color: #121212;
+  color: #ffffff;
+}
+
+
+
+
+#projects{
+background-color: rgb(167, 92, 224);
+min-height: 45vh;
+padding: 5% 20% 5% 20%;
+line-height: 1.8;
+
+
+}
+body.darkMode #projects {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+
+#projectcontainer {
+display: flex;
+justify-content: space-between; 
+gap: 30px;
+flex-wrap: wrap;
+}
+
+#project {
+display: flex;
+justify-content:space-evenly;
+flex-direction: column;
+align-items: center;
+color:blueviolet;
+background-color: rgb(218, 212, 227);
+height: 200px;
+width: 150px; 
+border-radius: 5px 20px 0px; 
+
 
 }
 
 
 #skills{
-  background-color: rgb(73, 23, 87);
-  height: 45vh;
-  padding: 5rem 10rem 5rem 10rem;
-  color:antiquewhite;
-  line-height: 1.2;
+background-color: rgb(73, 23, 87);
+min-height: 45vh;
+ padding: 5% 20% 5% 20%;
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+color:antiquewhite;
+line-height: 1.8;
+
+}
+
+body.darkMode #skills{
+  background-color: #000000;
+  color: #ffffff;
+}
+
+footer{
+  background-color: rgb(219, 206, 224);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; 
+  min-height: 20vh;
   
 }
+
+body.darkMode footer {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+
+.overlay{
+position:fixed;
+top:0;
+left: 0;
+background-color: rgba(46, 51, 56, 0.092);
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.modal{
+background-color: aliceblue;
+height: 60vh;
+width: 60vw;
+padding: 2rem
+}
+
+
+#backTotopBtn{
+  color: antiquewhite;
+  background-color: rgb(116, 58, 113);
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  font-family: monospace;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: none;
+}
+
+.seeMore{
+  color: antiquewhite;
+  background-color: rgb(116, 58, 113);
+ 
+}
+
+
+
+
+
+.closeButton{
+  display:block;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  height: 50px;
   
 
-  footer{
-    display: flex;
-    background-color: rgb(219, 206, 224);
-    justify-content: space-between;
-    align-items: center;
-    height: 150px;
-    padding: 4rem;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+.hidden{
+  display: none;
+}
+
+  nav.sub_nav ul li{
+    display: block; 
+  }
+
+  @media (max-width:1200px){
+    body{
+      background-color: rgb(22, 35, 20);
+    }
+  }
+
+  @media (max-width:768px) {
+    body {
+        background-color: rgb(61, 111, 63);
+    }
+}
+
+
+  @media (max-width:375px){
+    body{
+      background-color: rgb(41, 149, 52);
+    }
   }
 
 
-    nav.sub_nav ul li{
-      display: block; 
-    }
+  /* .
 
-    @media (max-width:1200px){
-      body{
-        background-color: rgb(22, 35, 20);
-      }
-    }
-
-    @media (max-width:768px) {
-      body {
-          background-color: rgb(61, 111, 63);
-      }
-  }
+  space around not best. space between. use min height. display inline block margin 1rem.
+  
+  
+  add width
 
 
-    @media (max-width:375px){
-      body{
-        background-color: rgb(41, 149, 52);
-      }
-    }
+
+
+    
+
+
 
     
