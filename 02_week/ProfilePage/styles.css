@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+  padding: 50px;
+  margin: auto;
+  font-size: 42px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  border-radius: 12px;
+  color: rgb(41, 10, 32);
+
+  border-bottom: 10px solid rgb(144, 226, 237);
+  width: 95%;
+}
+
+.intro {
+  padding: 20px;
+  margin: auto;
+  border-bottom: 10px solid rgba(82, 19, 19, 0.481);
+  background-color: rgba(248, 247, 247, 0.839);
+  height: 25%; /* dont change this */
+  font-size: 16px;
+  border-radius: 12px;
+  text-align: left;
+  width: 95%;
+}
+
+.hobbies {
+  padding: 20px;
+  margin: auto;
+  background-color: rgba(181, 190, 187, 0.879);
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.5;
+  height: 200px; /*dont change this*/
+  width: 95%;
+  border-radius: 12px;
+  border-bottom: 12px solid grey;
+}
+
+.aboutme {
+  display: flex;
+  margin: auto;
+  padding: 20px;
+  height: 300px;
+  width: 95%;
+  border: 3px solid rgb(218, 139, 159);
+  border-width: 10px;
+  border-radius: 10px;
+
+  background-image: url("https://img.freepik.com/premium-photo/abstract-background-purple-streaks-white-background_527140-409.jpg");
+  background-size: cover;
+}
+.text {
+  flex: 1;
+  margin-right: 20px;
+}
+.picture1 {
+  flex: 1;
+}
+
+.picture1 img {
+  max-width: 25%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.footer {
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  color: rgb(91, 6, 6);
+  font-size: 13px;
+  background-color: rgba(208, 223, 212, 0.768);
+  border-bottom: 12px solid rgba(91, 79, 79, 0.785);
+}
+
+body {
+  background-color: rgba(255, 255, 255, 0.253);
+  background-image: url("https://static.vecteezy.com/system/resources/previews/020/693/799/non_2x/subtle-gradient-background-with-pastel-colour-free-vector.jpg");
+
+  background-size: cover;
+  background-position: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+}
