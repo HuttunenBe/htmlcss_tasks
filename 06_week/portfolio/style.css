@@ -24,12 +24,11 @@ body{
 button {
   padding: 10px 20px;
   margin: 20px;
-  background-color: #007bff;
+  background-color: #36072d;
   color: #fff;
   border: none;
   border-radius: 5px;
 }
-
 
 
 .container{
@@ -139,7 +138,7 @@ nav ul li {
 }
 
 body.darkMode #about{
-  background-color: #121212;
+  background-color: #222222;
   color: #ffffff;
 }
 
@@ -155,7 +154,7 @@ line-height: 1.8;
 
 }
 body.darkMode #projects {
-  background-color: #000000;
+  background-color: #101010;
   color: rgb(255, 255, 255);
 }
 
@@ -195,7 +194,7 @@ line-height: 1.8;
 }
 
 body.darkMode #skills{
-  background-color: #000000;
+  background-color: #1b1b1b;
   color: #ffffff;
 }
 
@@ -219,7 +218,7 @@ body.darkMode footer {
 position:fixed;
 top:0;
 left: 0;
-background-color: rgba(46, 51, 56, 0.092);
+background-color: rgba(46, 51, 56, 0.723);
 width: 100%;
 height: 100%;
 display: flex;
@@ -232,8 +231,19 @@ align-items: center;
 background-color: aliceblue;
 height: 60vh;
 width: 60vw;
-padding: 2rem
+padding: 2rem;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items:flex-start; 
 }
+
+
+body.darkMode .modal{
+  background-color: rgb(0, 0, 0);
+color:#ffffff
+  }
+
 
 
 #backTotopBtn{
@@ -257,15 +267,12 @@ padding: 2rem
 
 
 
-
-
 .closeButton{
   display:block;
   position: absolute;
   top: 1rem;
   right: 1rem;
   height: 50px;
-  
 
 }
 
