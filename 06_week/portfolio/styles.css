@@ -1,4 +1,3 @@
-
 *{
   margin: 0;
   padding: 0;
@@ -95,6 +94,9 @@ a:link {
   text-decoration: none;
 }
 
+body.darkMode a{
+  color: #f064d2;
+}
 
 
 nav ul li {
@@ -259,13 +261,13 @@ color:#ffffff
   display: none;
 }
 
-.seeMore{
+#seeMore{
   color: antiquewhite;
   background-color: rgb(116, 58, 113);
- 
+  margin-left: auto;
+  display: block;
 }
-
-
+ 
 
 .closeButton{
   display:block;
@@ -314,12 +316,3 @@ button:hover{
   
   
   add width
-
-
-
-
-    
-
-
-
-    

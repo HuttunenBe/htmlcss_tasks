@@ -8,6 +8,6 @@ node_modules/
 .DS_Store
 
 # Visual Studio Code settings
-.vscode/
+.vscode
 
-.DS_Store
+.DS_Store/
