@@ -176,9 +176,14 @@ color:blueviolet;
 background-color: rgb(218, 212, 227);
 height: 200px;
 width: 150px; 
-border-radius: 5px 20px 0px; 
+border-radius: 5px 20px 0px;
+transition: transform 0.3s ease; 
 
 
+}
+
+#project:hover {
+  transform: scale(1.05);
 }
 
 
@@ -278,9 +283,16 @@ color:#ffffff
 
 }
 
-button:hover{
-  cursor: pointer;
+
+
+button:hover {
+  transform: scale(1.1);
 }
+
+button:active {
+  transform: scale(1.05);
+}
+
 
 .hidden{
   display: none;
@@ -308,6 +320,8 @@ button:hover{
       background-color: rgb(41, 149, 52);
     }
   }
+
+
 
 
   /* .
