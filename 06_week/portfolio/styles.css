@@ -15,6 +15,34 @@ body{
   
 }
 
+.dark-mode-toggle {
+  width: 50px;
+  height: 20px;
+  position: relative;
+  display: block;
+  background-color: #ffffff;
+  border-radius: 1000px;
+  box-shadow: 0px 5px 15px rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.dark-mode-toggle:after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  background-color: #333;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+/* When the checkbox is checked (dark mode) */
+input:checked + .dark-mode-toggle:after {
+  transform: translateX(30px); /* Move the circle */
+  background-color: #ffffff; /* Change circle color */
+}
 .darkMode {
   background-color: #121212;
   color: #ffffff;
@@ -44,14 +72,20 @@ button {
 
 h1{
 text-transform: uppercase;
+padding-left: 5%;
 }
 
 h2{
     margin: 0 0 20px 0; 
     text-transform: uppercase;
+    align-self:first baseline;
     
 }
 
+#footerBeniitta{
+  padding-left: 5%;
+  align-self:center;
+}
 
 header {
   background-color: rgb(219, 206, 224);

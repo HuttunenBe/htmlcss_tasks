@@ -42,6 +42,8 @@ if (darkModeOn) {
   document.body.classList.remove("darkMode");
 }
 
+
+
 backTotopBtn.addEventListener("click", backToTop);
 modalButton.addEventListener("click", displayElement);
 closeButton.addEventListener("click", displayElement);
