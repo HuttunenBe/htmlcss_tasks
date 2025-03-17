@@ -28,10 +28,10 @@ body{
     grid-template-rows: repeat(6, 1fr); 
     gap: 10px;
     grid-template-areas:
-        "a a c b b"
-        "e e c b b"
-        "f d d i i"
-        "g h h i i"; 
+        "a a c c b b"
+        "e e c c b b"
+        "f d d i i i"
+        "g h h i i i"; 
 
 }
 
