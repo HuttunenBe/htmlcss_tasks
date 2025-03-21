@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "roboto";
     
   }
   html{
@@ -10,11 +11,46 @@
   
   
   body{
-    background-color: rgb(228, 129, 203);
+    background-color: rgb(247, 208, 240);
     font-family: monospace;
     font-size: 1rem;
     
   }
+
+  h1{
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  h2{
+    margin: 0 0 20px 0; 
+    text-transform: uppercase;
+    align-self:first baseline;
+    
+}
+
+  .hero{
+    background-image: url("https://images.pexels.com/photos/20943528/pexels-photo-20943528/free-photo-of-electronic-office-devices-blank-green-mockup-pink-background.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000000;
+
+  }
+
+
+
+
+
+
+
+
+
   
   .dark-mode-toggle {
     width: 50px;
@@ -60,18 +96,9 @@
     display: none;
   }
   
-  h1{
-  text-transform: uppercase;
-  padding-left: 5%;
-  font-size: 1.5rem;
-  }
+ 
   
-  h2{
-      margin: 0 0 20px 0; 
-      text-transform: uppercase;
-      align-self:first baseline;
-      
-  }
+
   
   #footerBeniitta{
     padding-left: 5%;
@@ -79,12 +106,12 @@
   }
   
   header {
-    background-color: rgb(219, 206, 224);
+    background-color: rgb(250, 199, 234);
     display: flex;
-    flex-direction: row;
+    flex-direction:row-reverse;
     justify-content: space-evenly;
     align-items: center; 
-    min-height: 20vh;
+    min-height: 10vh;
     
   
   }
@@ -98,7 +125,7 @@
     display: flex;
     flex-direction: row;
     list-style: none;
-    color: blueviolet;
+    color: rgb(97, 14, 64);
     font-size: 1rem;
     flex-wrap: wrap;
   
@@ -130,7 +157,8 @@
   }
   
   #about {
-    background-color: #c4a1db;
+    margin-top: 5rem;
+    background-color:  #e75eb3;
     padding: 5% 20% 5% 20%;
     line-height: 1.8;
     display: flex;
@@ -138,10 +166,12 @@
     justify-content:flex-start ;
     align-items: flex-start;
     flex-wrap: wrap;
+    height: 100vh;
   }
   
   #about h2 {
     text-align: left;
+    color: #161616;
   }
   
   #about div {
@@ -174,8 +204,9 @@
   
   
   #projects{
-  background-color: rgb(167, 92, 224);
-  min-height: 45vh;
+   background-color:  #ffffff;
+   background-image: URL("https://images.pexels.com/photos/736850/pexels-photo-736850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  min-height: 50vh;
   padding: 5% 20% 5% 20%;
   line-height: 1.8;
   width: 100%;
@@ -190,7 +221,7 @@
   #projectcontainer {
   display: flex;
   justify-content: space-between; 
-  flex-direction: column;
+  flex-direction: row;
   gap: 30px;
   flex-wrap: wrap;
   }
@@ -216,8 +247,8 @@
   
   
   #skills{
-  background-color: rgb(73, 23, 87);
-  min-height: 45vh;
+    background-color:  #e75eb3;
+  min-height: 100vh;
    padding: 5% 20% 5% 20%;
   display: flex;
     flex-direction: column;

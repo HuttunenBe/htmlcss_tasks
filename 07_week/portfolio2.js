@@ -30,7 +30,7 @@ const backToTop = () => {
 };
 const toggleLightSwitch = () => {
   document.body.classList.toggle("darkMode");
-  
+
   const currentMode = document.body.classList.contains("darkMode");
   localStorage.setItem("darkMode", JSON.stringify(currentMode));
 };
@@ -41,8 +41,6 @@ if (darkModeOn) {
 } else {
   document.body.classList.remove("darkMode");
 }
-
-
 
 backTotopBtn.addEventListener("click", backToTop);
 modalButton.addEventListener("click", displayElement);
