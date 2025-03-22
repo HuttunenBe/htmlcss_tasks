@@ -7,18 +7,23 @@ const body = document.body;
 const menuToggle = document.querySelector("#menuToggle");
 const mobileMenu = document.querySelector("#mobileMenu");
 
-
 window.onscroll = function () {
   scrollFunction();
 };
 
 menuToggle.addEventListener("click", () => {
   mobileMenu.classList.toggle("active");
-  menuToggle.setAttribute("aria-expanded", mobileMenu.classList.contains("active"));
+  menuToggle.setAttribute(
+    "aria-expanded",
+    mobileMenu.classList.contains("active")
+  );
 });
 
 document.addEventListener("click", (event) => {
-  if (!mobileMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+  if (
+    !mobileMenu.contains(event.target) &&
+    !menuToggle.contains(event.target)
+  ) {
     mobileMenu.classList.remove("active");
     menuToggle.setAttribute("aria-expanded", "false");
   }

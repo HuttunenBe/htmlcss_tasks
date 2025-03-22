@@ -7,15 +7,17 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="portfolio2.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="icon" type="image/png" href="favicon.png"> 
 <title>Beniitta Huttunen's Portfolio</title>
 </head>
 <body class="darkMode"></body>
 <header>
     <header>
-        <button id="menuToggle"><img src="hamburgerGrey.png" alt="hamburgerMenu" /> </button>
+        <button id="menuToggle">
+            <span class="material-icons">menu</span>
+          </button>
         <nav id="desktopMenu">
           <ul>
             <li><a href="#about">About</a></li>
@@ -49,13 +51,15 @@
             </div>
         </section>
         <section id="about">
+       
             <div class="containerAbout">
+                
                 <div class="paragraphPicture">
                     <img src="profile.jpeg" id="profilePicture" alt="Profile Picture">
                 </div>
                 <div class="paragraph">
                     <h2>About</h2>
-                    <p>Hello! My name is Beniitta. I'm a Full Stack Web Developer student at Business College Helsinki. I'm passionate about programming and building websites. </p> <p> I always push myself to learn new things and better myself. I love problem-solving and tackling different challenges. </p>
+                    <p>Hello! My name is Beniitta. I'm a Full Stack Web Developer student at Business College Helsinki. I'm passionate about programming and building websites. </p> <br><p> I always push myself to learn new things and better myself. I love problem-solving and tackling different challenges. </p>
                     <button id="seeMoreButton">See more</button>
                 </div>
             </div>
@@ -95,7 +99,7 @@
         <section id="skills">
             <h2>Skills</h2>
             <div class="container">
-                <p id="skillsParagraph">I am always looking for opportunities tp improve my skills and work on projects that challenge me. Right now, I'm learning JavaScript, CSS, HTML, and Python.
+                <p id="skillsParagraph">I am always looking for opportunities t improve my skills and work on projects that challenge me. <p</p>Right now, I'm learning JavaScript, CSS, HTML, and Python.
                 </p>
                 <div class="skillsContainer">
                     <div class="skill">
@@ -132,40 +136,8 @@
                 </div>
             </div>
         </section>
-    </main>
-    <section class="contactSection" id="contactSection">
-        <div class="container">
-            <form action="https://formsubmit.co/beniittahuttunen@gmail.com" method="POST" class="contactForm">
-                <div class="formContainer">
-                    <div class="formGroup">
-                        <h2 id="contactH2">Contact Me</h2>
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" required placeholder="Enter your name">
-                    </div>
-                    <div class="formGroup">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email" required placeholder="Enter your email">
-                    </div>
-                    <div class="formGroup">
-                        <label for="message">Your Message</label>
-                        <textarea id="message" name="message" required placeholder="Write your message here..." rows="9"></textarea>
-                    </div>
-                    <button type="submit" class="submitButton">Send Message</button>
-                    <p id="formMessage"></p>
-                </div>
-            </form>
-        </div>
-    </section>
-    <footer id="footer">
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contactSection">Contact me</a></li>
-                </ul>
-            </nav>
-            <button id="backToTopButton">Back to top</button>
+  
+    <button id="backToTopButton">Back to top</button>
         </div>
    <div class="overlay hidden">
     <div class="modal">
@@ -173,7 +145,31 @@
         <p>Here is a chapter that tells you more about me.. or it will when I write it but now I'm focusing on css and other things. I think I will move it to projects when I have time.</p>
         <button id="closeButton">
             <span class="cross">&#10005;</span> 
-        </button></div>
+        </button></div>  </main>
+        <footer>
+            <section class="contactSection" id="contactSection">
+                <div class="container">
+                    <form action="https://formsubmit.co/beniittahuttunen@gmail.com" method="POST" class="contactForm">
+                        <div class="formContainer">
+                            <div class="formGroup">
+                                <h2 id="contactH2">Contact Me</h2>
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Enter your name">
+                            </div>
+                            <div class="formGroup">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" required placeholder="Enter your email">
+                            </div>
+                            <div class="formGroup">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" required placeholder="Write your message here..." rows="9"></textarea>
+                            </div>
+                            <button type="submit" class="submitButton">Send Message</button>
+                            <p id="formMessage"></p>
+                        </div>
+                    </form>
+                </div>
+            </section>
     </footer>
     <script src="portfolio2.js"></script>
     </body>
