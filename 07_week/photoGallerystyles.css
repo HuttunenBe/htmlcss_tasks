@@ -1,93 +1,93 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-
-
-body{
-    background-color: rgb(0, 0, 0);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
+body {
+  background-color: rgb(0, 0, 0);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
 }
 
-.container{
-   width: 80%;
-   margin: auto;
-   max-width: 1200px;
-   padding: 2rem;
-
+.container {
+  width: 80vw;
+  margin: auto;
+  max-width: 1200px;
+  padding: 2rem;
 }
 
-#title{
-    margin-bottom: 3rem;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 3rem;
+#menu li {
+  padding: 1rem;
+}
+#menu a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+#title {
+  margin-bottom: 3rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 3rem;
 }
 .photoGallery {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr); 
-    gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 1rem;
 
-    grid-template-areas:
-        "a a c c b b"
-        "e e c c b b"
-        "f d d i i i"
-        "g h h i i i"; 
-
+  grid-template-areas:
+    "a a c c b b"
+    "e e c c b b"
+    "f d d i i i"
+    "g h h i i i";
 }
 
 #photo1 {
-    grid-area: a;
+  grid-area: a;
 }
 
 #photo2 {
-    grid-area: b;
+  grid-area: b;
 }
 
 #photo3 {
-    grid-area: c;
+  grid-area: c;
 }
 
 #photo4 {
-    grid-area: d;
+  grid-area: d;
 }
 
 #photo5 {
-    grid-area: e;
+  grid-area: e;
 }
 
 #photo6 {
-    grid-area: f;
+  grid-area: f;
 }
 
 #photo7 {
-    grid-area: g; 
+  grid-area: g;
 }
 
 #photo8 {
-    grid-area: h; 
+  grid-area: h;
 }
 
 #photo9 {
-    grid-area: i; 
+  grid-area: i;
 }
 
-.gridPicture{
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-    object-fit: cover;
-    flex-wrap: wrap ;
-   
+.gridPicture {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+  flex-wrap: wrap;
 }
 
-.gridPicture:hover{
-    transform: scale(1.05);
+.gridPicture:hover {
+  transform: scale(1.05);
 }
-
-
