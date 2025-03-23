@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close" />
-    <meta charset="UTF"-8> 
+    <meta charset="UTF-8">
 <meta name="description" content="Welcome to my portfolio!"> 
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,11 +14,10 @@
 </head>
 <body class="darkMode"></body>
 <header>
-    <header>
-        <button id="menuToggle">
+        <button id="menuToggle" aria-label="Open hamburger menu">
             <span class="material-icons">menu</span>
           </button>
-        <nav id="desktopMenu">
+        <nav id="desktopMenu" aria-label="Main navigation">
           <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -27,8 +26,7 @@
             <li><a href="photoGallery.html">Gallery</a></li>
           </ul>
         </nav>
-      </header>
-      <nav id="mobileMenu" class="hidden">
+      <nav id="mobileMenu" class="hidden" aria-label="Mobile navigation bar">
         <ul>
         <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -37,7 +35,7 @@
           <li><a href="#contactSection">Contact me</a></li> <li><a href="photoGallery.html">Gallery</a></li>
         </ul>
       </nav>
-      <button id="modeButton" class="toggleButton">Switch Color Mode</span>
+      <button id="modeButton" class="toggleButton" aria-label="Switch colors button">Switch Color Mode</span> 
       </button>
 </header>
     <main>
@@ -60,7 +58,7 @@
                 <div class="paragraph">
                     <h2>About</h2>
                     <p>Hello! My name is Beniitta. I'm a Full Stack Web Developer student at Business College Helsinki. I'm passionate about programming and building websites. </p> <br><p> I always push myself to learn new things and better myself. I love problem-solving and tackling different challenges. </p>
-                    <button id="seeMoreButton">See more</button>
+                    <button id="seeMoreButton" aria-label="Open modal button">See more</button>
                 </div>
             </div>
         </section>
@@ -71,27 +69,37 @@
                 <div class="projectcontainer">
                     <div id="project">
                         <a href="project1.com">
-                            <img src="https://images.pexels.com/photos/10267922/pexels-photo-10267922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project 1 Image" class="projectImage">
-                        </a>
-                        <h4>Project 1</h4>
+                            <picture>
+                              <source media="(max-width: 640px)" srcset="project1Small.jpg">
+                              <source media="(max-width: 1200px)" srcset="project1Medium.jpg">
+                              <img src="project1.webp" alt="Project 1 image"  class="projectImage">
+                            </picture>
+                          </a>
+                        <h3>Project 1</h3>
                     </div>
                     <div id="project">
-                        <a href="project2.com">
-                            <img src="https://images.pexels.com/photos/2516025/pexels-photo-2516025.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project 2 Image" class="projectImage">
-                        </a>
-                        <h4>Project 2</h4>
+                        <picture>
+                            <source media="(max-width: 640px)" srcset="project2Small.jpg">
+                            <source media="(max-width: 1200px)" srcset="projects3Medium.jpg">
+                            <img src="project2.jpg" alt="Project 2 image"  class="projectImage">
+                          </picture>
+                        <h3>Project 2</h3>
                     </div>
                     <div id="project">
-                        <a href="project3.com">
-                            <img src="https://images.pexels.com/photos/1382156/pexels-photo-1382156.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project 3 Image" class="projectImage">
-                        </a>
-                        <h4>Project 2</h4>
+                        <picture>
+                            <source media="(max-width: 640px)" srcset="project3Small.jpg">
+                            <source media="(max-width: 1200px)" srcset="project3Medium.jpg">
+                            <img src="project3.jpg" alt="Project 3 image"  class="projectImage">
+                          </picture>
+                        <h3>Project 3</h3>
                     </div>
                     <div id="project">
-                        <a href="project4.com">
-                            <img src="https://images.pexels.com/photos/2399840/pexels-photo-2399840.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project 4 Image" class="projectImage">
-                        </a>
-                        <h4>Project 2</h4>
+                        <picture>
+                            <source media="(max-width: 640px)" srcset="project4Small.jpg">
+                            <source media="(max-width: 1200px)" srcset="project4Medium.jpg">
+                            <img src="project4.jpg" alt="Project 4 image"  class="projectImage">
+                          </picture>
+                        <h3>Project 4</h3>
                     </div>
                 </div>
             </div>
@@ -137,13 +145,13 @@
             </div>
         </section>
   
-    <button id="backToTopButton">Back to top</button>
+    <button id="backToTopButton" aria-label="Back to top">Back to top</button>
         </div>
    <div class="overlay hidden">
     <div class="modal">
-        <h1>Background</h1>
+        <h2>Background</h2>
         <p>Here is a chapter that tells you more about me.. or it will when I write it but now I'm focusing on css and other things. I think I will move it to projects when I have time.</p>
-        <button id="closeButton">
+        <button id="closeButton" aria-label="Close modal button">
             <span class="cross">&#10005;</span> 
         </button></div>  </main>
         <footer>
@@ -162,9 +170,9 @@
                             </div>
                             <div class="formGroup">
                                 <label for="message">Your Message</label>
-                                <textarea id="message" name="message" required placeholder="Write your message here..." rows="9"></textarea>
+                                <textarea id="message" name="message" required placeholder="Write your message here..." rows="5"></textarea>
                             </div>
-                            <button type="submit" class="submitButton">Send Message</button>
+                            <button type="submit" class="submitButton" aria-label="Submit contact form">Send Message</button>
                             <p id="formMessage"></p>
                         </div>
                     </form>
