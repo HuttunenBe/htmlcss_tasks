@@ -1,5 +1,7 @@
-## Completed Tasks
+# 🦊 HTML and CSS Tasks Collection
+A collection of HTML and CSS exercises completed as part of coursework, with the purpose of learning HTML and CSS through practical exercises.
 
+## ✅ Included Tasks
 - **week_01**
   - [x] practice
 - **week_02:**
@@ -13,3 +15,7 @@
 - **week_06:**
   - [] portfolio
   
+🛠️ Tech Stack
+JavaScript
+HTML5
+CSS3
