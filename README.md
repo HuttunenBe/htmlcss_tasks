@@ -2,9 +2,9 @@
 A collection of HTML and CSS exercises completed as part of coursework, with the purpose of learning HTML and CSS through practical exercises.
 
 🛠️ Tech Stack
-JavaScript
-HTML5
-CSS3
+- JavaScript
+- HTML5
+- CSS
 
 ## ✅ Included Tasks
 - **week_01**
